@@ -1,0 +1,11 @@
+<h1>Expenses</h1>
+
+<table>
+	<tr> <td> Item </td>  <td> Amount </td> </tr>
+  <% @expenses.each do |expense| %>
+    <tr><td><%= expense.item %> <%= expense.amount %> </td> </tr>
+  <% end %>
+</table>
+<hr>
+<a href="/new">New</a>
+<a href="/show">Show</a>
